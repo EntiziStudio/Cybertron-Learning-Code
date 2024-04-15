@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="UseCases\Products\CreateProduct\CreateProductService.cs" />
+    <Compile Remove="UseCases\Products\CreateProduct\ICreateProductService.cs" />
+    <Compile Remove="UseCases\Products\DeleteProduct\DeleteProductService.cs" />
+    <Compile Remove="UseCases\Products\DeleteProduct\IDeleteProductService.cs" />
+    <Compile Remove="UseCases\Products\GetAllProducts\GetAllProductsService.cs" />
+    <Compile Remove="UseCases\Products\GetAllProducts\IGetAllProductsService.cs" />
+    <Compile Remove="UseCases\Products\GetProductById\GetProductByIdService.cs" />
+    <Compile Remove="UseCases\Products\GetProductById\IGetProductByIdService.cs" />
+    <Compile Remove="UseCases\Products\UpdateProduct\IUpdateProductService.cs" />
+    <Compile Remove="UseCases\Products\UpdateProduct\UpdateProductService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Allspark.Domain\Allspark.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
